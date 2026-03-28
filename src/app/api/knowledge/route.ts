@@ -3,7 +3,7 @@ import { invalidateKnowledgeCache } from "@/lib/knowledge";
 
 export const dynamic = "force-dynamic";
 
-const ADMIN_KEY = process.env.ADMIN_KEY || "boreakademiet2026";
+const ADMIN_KEY = process.env.ADMIN_KEY || "admin2026";
 
 function checkAuth(req: Request): boolean {
   const key = req.headers.get("x-admin-key");
